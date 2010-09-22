@@ -1,0 +1,23 @@
+<p>
+  <b>Name:</b>
+  <%=h @index.name %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%=h @index.email %>
+</p>
+
+<p>
+  <b>Details:</b>
+  <%=h @index.details %>
+</p>
+
+<p>
+  <b>Vreme:</b>
+  <%=h @index.vreme %>
+</p>
+
+
+<%= link_to 'Edit', edit_index_path(@index) %> |
+<%= link_to 'Back', indices_path %>
