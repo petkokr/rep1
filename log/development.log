@@ -24,3 +24,54 @@ Processing IndicesController#index (for 127.0.0.1 at 2010-09-22 13:42:20) [GET]
 Rendering template within layouts/indices
 Rendering indices/index
 Completed in 688ms (View: 578, DB: 156) | 200 OK [http://localhost/indices]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndicesController#index (for 127.0.0.1 at 2010-09-22 13:46:17) [GET]
+  [4;35;1mIndex Load (0.0ms)[0m   [0mSELECT * FROM `indices` [0m
+Rendering template within layouts/indices
+Rendering indices/index
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/indices]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndicesController#new (for 127.0.0.1 at 2010-09-22 13:46:19) [GET]
+  [4;36;1mIndex Columns (31.2ms)[0m   [0;1mSHOW FIELDS FROM `indices`[0m
+Rendering template within layouts/indices
+Rendering indices/new
+Completed in 109ms (View: 62, DB: 31) | 200 OK [http://localhost/indices/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndicesController#create (for 127.0.0.1 at 2010-09-22 13:46:27) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"6QmGDx5g8g5Pd19sAtl5sSHYwCEU1z+BUYEdTBJSmYU=", "index"=>{"name"=>"ask", "vreme"=>"sldfkj", "details"=>"sdkj", "email"=>"lksdf"}}
+  [4;35;1mIndex Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `indices`[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mIndex Create (15.6ms)[0m   [0mINSERT INTO `indices` (`name`, `vreme`, `updated_at`, `details`, `email`, `created_at`) VALUES('ask', 'sldfkj', '2010-09-22 11:46:27', 'sdkj', 'lksdf', '2010-09-22 11:46:27')[0m
+  [4;36;1mSQL (46.9ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/indices/1
+Completed in 125ms (DB: 78) | 302 Found [http://localhost/indices]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndicesController#show (for 127.0.0.1 at 2010-09-22 13:46:27) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mIndex Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `indices`[0m
+  [4;36;1mIndex Load (15.6ms)[0m   [0;1mSELECT * FROM `indices` WHERE (`indices`.`id` = 1) [0m
+Rendering template within layouts/indices
+Rendering indices/show
+Completed in 62ms (View: 16, DB: 16) | 200 OK [http://localhost/indices/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndicesController#index (for 127.0.0.1 at 2010-09-22 13:46:29) [GET]
+  [4;35;1mIndex Load (0.0ms)[0m   [0mSELECT * FROM `indices` [0m
+Rendering template within layouts/indices
+Rendering indices/index
+  [4;36;1mIndex Columns (15.6ms)[0m   [0;1mSHOW FIELDS FROM `indices`[0m
+Completed in 62ms (View: 16, DB: 16) | 200 OK [http://localhost/indices]
