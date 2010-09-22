@@ -1,4 +1,7 @@
 class IndicesController < ApplicationController
+
+
+=begin
   # GET /indices
   # GET /indices.xml
   def index
@@ -80,4 +83,5 @@ class IndicesController < ApplicationController
       format.xml  { head :ok }
     end
   end
+=end
 end
