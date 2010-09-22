@@ -407,3 +407,88 @@ Rendering template within layouts/indices
 Rendering indices/index
   [4;36;1mIndex Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `indices`[0m
 Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/indices]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-09-22 15:32:34) [GET]
+Rendering home/index
+
+ActionView::TemplateError (index_url failed to generate from {:action=>"show", :controller=>"index"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["index", :id] - are they all satisfied?) on line #5 of app/views/home/index.html.erb:
+2: 
+3: <%= link_to 'saddsa' ,'www.google.com'  %>
+4: <% link_to 'hohooh', :controller=>'indices', :action=>'index' %>
+5: <%= link_to 'hohosssssssssoh', index_path %>
+
+    (eval):17:in `index_path'
+    app/views/home/index.html.erb:5
+    C:/Ruby186/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby186/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby186/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby186/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby186/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby186/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby186/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby186/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby186/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby186/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (125.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-09-22 15:33:02) [GET]
+Rendering home/index
+
+ActionView::TemplateError (undefined local variable or method `indices_path' for #<ActionView::Base:0x4da5c40>) on line #5 of app/views/home/index.html.erb:
+2: 
+3: <%= link_to 'saddsa' ,'www.google.com'  %>
+4: <% link_to 'hohooh', :controller=>'indices', :action=>'index' %>
+5: <%= link_to 'hohosssssssssoh', indices_path %>
+
+    app/views/home/index.html.erb:5
+    C:/Ruby186/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby186/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby186/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby186/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby186/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby186/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby186/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby186/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby186/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby186/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (109.4ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-09-22 15:33:40) [GET]
+Rendering home/index
+
+ActionView::TemplateError (undefined local variable or method `indices_path' for #<ActionView::Base:0x4f233f0>) on line #5 of app/views/home/index.html.erb:
+2: 
+3: <%= link_to 'saddsa' ,'www.google.com'  %>
+4: <% link_to 'hohooh', :controller=>'indices', :action=>'index' %>
+5: <%= link_to 'hohosssssssssoh', indices_path %>
+
+    app/views/home/index.html.erb:5
+    C:/Ruby186/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby186/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby186/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby186/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby186/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby186/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby186/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby186/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby186/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby186/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (171.9ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
